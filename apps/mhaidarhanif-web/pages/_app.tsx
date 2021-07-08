@@ -1,23 +1,21 @@
 import { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
+import { ThemeProvider } from 'theme-ui'
 
-import SEO from '../next-seo.config'
 import './styles.css'
+import theme from '../theme'
+import SEO from '../next-seo.config'
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo {...SEO} />
 
-      <div>
-        <header>
-          <h1>M Haidar Hanif</h1>
-        </header>
-
+      <ThemeProvider theme={theme}>
         <main>
           <Component {...pageProps} />
         </main>
-      </div>
+      </ThemeProvider>
     </>
   )
 }
