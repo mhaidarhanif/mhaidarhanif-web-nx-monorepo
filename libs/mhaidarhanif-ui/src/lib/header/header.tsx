@@ -82,7 +82,7 @@ export function Header(props: HeaderProps) {
         <NextLink href="/resume" passHref>
           <NavLink>Resume</NavLink>
         </NextLink>
-        <NavLink href="https://catamyst.com" target="_blank">
+        <NavLink href="https://catamyst.com" target="_blank" rel="noreferrer">
           Catamyst
         </NavLink>
       </Flex>

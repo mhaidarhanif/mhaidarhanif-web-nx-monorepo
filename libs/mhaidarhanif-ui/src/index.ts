@@ -1,3 +1,5 @@
 export * from './lib/theme/theme'
 export * from './lib/header/header'
 export * from './lib/footer/footer'
+export * from './lib/links/links'
+export * from './lib/links/link-anchor'

@@ -34,20 +34,32 @@ export const customTheme = {
     text: '#111',
     background: '#fff',
     primary: '#0aa',
-    primaryHover: '#0bb',
+    primaryHover: '#1cc',
     secondary: '#aca',
     secondaryHover: '#adb',
-    comment: '#999',
+    comment: '#eee',
     keyword: '#c0f',
     modes: {
+      laser: {
+        brand: 'hsl(10, 80%, 50%)',
+        text: 'hsl(10, 20%, 20%)',
+        background: 'hsl(10, 10%, 98%)',
+        primary: 'hsl(10, 80%, 50%)',
+        primaryHover: 'hsl(10, 80%, 70%)',
+        secondary: 'hsl(10, 60%, 50%)',
+        secondaryHover: 'hsl(10, 60%, 70%)',
+        highlight: 'hsl(10, 40%, 90%)',
+        muted: 'hsl(10, 20%, 94%)',
+      },
       dark: {
         brand: '#0cc',
         text: '#ddd',
         background: '#111',
         primary: '#0cc',
-        primaryHover: '#2ff',
+        primaryHover: '#5ff',
         secondary: '#adb',
         secondaryHover: '#cfd',
+        comment: '#222',
       },
       midnight: {
         brand: '#F6E05E',
@@ -57,17 +69,7 @@ export const customTheme = {
         primaryHover: '#FAF089',
         secondary: '#F6AD55',
         secondaryHover: '#FBD38D',
-      },
-      laser: {
-        brand: 'hsl(10, 80%, 50%)',
-        text: 'hsl(10, 20%, 20%)',
-        background: 'hsl(10, 10%, 98%)',
-        primary: 'hsl(10, 80%, 50%)',
-        primaryHover: 'hsl(10, 80%, 60%)',
-        secondary: 'hsl(10, 60%, 50%)',
-        secondaryHover: 'hsl(10, 60%, 60%)',
-        highlight: 'hsl(10, 40%, 90%)',
-        muted: 'hsl(10, 20%, 94%)',
+        comment: '#222',
       },
     },
   },
@@ -117,6 +119,18 @@ export const customTheme = {
     nav: {
       p: 3,
       cursor: 'pointer',
+    },
+    social: {
+      py: 0.5,
+      mx: 3,
+      my: 2,
+      color: 'primary',
+      textDecoration: 'none',
+      borderBottom: '1px solid',
+      borderColor: 'comment',
+      '&:hover': {
+        borderColor: 'primary',
+      },
     },
   },
   textStyles: {
@@ -172,7 +186,7 @@ export const customTheme = {
     a: {
       color: 'primary',
       '&:hover': {
-        color: 'secondary',
+        color: 'primaryHover',
       },
     },
     pre: {
