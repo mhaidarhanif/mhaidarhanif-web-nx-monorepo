@@ -37,6 +37,8 @@ export const customTheme = {
     primaryHover: '#0bb',
     secondary: '#aca',
     secondaryHover: '#adb',
+    comment: '#999',
+    keyword: '#c0f',
     modes: {
       dark: {
         brand: '#0cc',
@@ -96,7 +98,8 @@ export const customTheme = {
       },
     },
     toggle: {
-      padding: 2,
+      px: 2,
+      py: 1,
       borderRadius: 'full',
       fontWeight: 'bold',
       cursor: 'pointer',
@@ -108,9 +111,25 @@ export const customTheme = {
     },
   },
   links: {
+    button: {
+      display: 'contents',
+    },
     nav: {
       p: 3,
       cursor: 'pointer',
+    },
+  },
+  textStyles: {
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: '400',
+      lineHeight: 'heading',
+    },
+    display: {
+      variant: 'textStyles.heading',
+      fontWeight: '400',
+      fontSize: '48px',
+      mb: 4,
     },
   },
   styles: {
@@ -121,10 +140,110 @@ export const customTheme = {
     },
     brand: {
       cursor: 'pointer',
-      fontWeight: 'bold',
+      fontWeight: '700',
       fontSize: '3',
       letterSpacing: '0.1em',
       color: 'brand',
+    },
+    h1: {
+      variant: 'textStyles.display',
+    },
+    h2: {
+      variant: 'textStyles.heading',
+      fontSize: 4,
+      mb: 4,
+    },
+    h3: {
+      variant: 'textStyles.heading',
+      fontSize: 3,
+    },
+    h4: {
+      variant: 'textStyles.heading',
+      fontSize: 2,
+    },
+    h5: {
+      variant: 'textStyles.heading',
+      fontSize: 1,
+    },
+    h6: {
+      variant: 'textStyles.heading',
+      fontSize: 1,
+    },
+    a: {
+      color: 'primary',
+      '&:hover': {
+        color: 'secondary',
+      },
+    },
+    pre: {
+      variant: 'prism',
+      fontFamily: 'monospace',
+      fontSize: 1,
+      p: 3,
+      color: 'text',
+      bg: 'muted',
+      overflow: 'auto',
+      code: {
+        color: 'inherit',
+      },
+    },
+    code: {
+      fontFamily: 'monospace',
+      color: 'secondary',
+      fontSize: 1,
+    },
+    inlineCode: {
+      fontFamily: 'monospace',
+      color: 'secondary',
+      bg: 'muted',
+    },
+    table: {
+      width: '100%',
+      my: 4,
+      borderCollapse: 'separate',
+      borderSpacing: 0,
+      'th,td': {
+        textAlign: 'left',
+        py: '4px',
+        pr: '4px',
+        pl: 0,
+        borderColor: 'muted',
+        borderBottomStyle: 'solid',
+      },
+    },
+    th: {
+      verticalAlign: 'bottom',
+      borderBottomWidth: '2px',
+    },
+    td: {
+      verticalAlign: 'top',
+      borderBottomWidth: '1px',
+    },
+    hr: {
+      border: 0,
+      borderBottom: '1px solid',
+      borderColor: 'muted',
+    },
+    img: {
+      maxWidth: '100%',
+    },
+  },
+  prism: {
+    '.comment,.prolog,.doctype,.cdata,.punctuation,.operator,.entity,.url': {
+      color: 'comment',
+    },
+    '.comment': {
+      fontStyle: 'italic',
+    },
+    '.property,.tag,.boolean,.number,.constant,.symbol,.deleted,.function,.class-name,.regex,.important,.variable':
+      {
+        color: 'keyword',
+      },
+    '.atrule,.attr-value,.keyword': {
+      color: 'primary',
+    },
+    '.selector,.attr-name,.string,.char,.builtin,.inserted': {
+      color: 'secondary',
     },
   },
 }
