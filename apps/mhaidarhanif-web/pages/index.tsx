@@ -1,9 +1,11 @@
 import { NextSeo } from 'next-seo'
 import { Container, Box, Button } from 'theme-ui'
 
+import { DefaultLayout } from '../layouts'
+
 const HomePage = () => {
   return (
-    <Container p={3} bg="muted">
+    <DefaultLayout>
       <NextSeo title="M Haidar Hanif" />
 
       <Box sx={{ mb: 4 }}>
@@ -20,7 +22,7 @@ const HomePage = () => {
         <Button variant="primary">Say Hello</Button>
         <Button variant="secondary">Surprise Me</Button>
       </Box>
-    </Container>
+    </DefaultLayout>
   )
 }
 
