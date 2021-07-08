@@ -1,15 +1,13 @@
-import React from 'react'
 import { AppProps } from 'next/app'
-import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
 
+import SEO from '../next-seo.config'
 import './styles.css'
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <title>M Haidar Hanif</title>
-      </Head>
+      <DefaultSeo {...SEO} />
 
       <div>
         <header>
