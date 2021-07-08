@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
-.next-image-box div {
+.next-image-box > div {
   border-radius: 5%;
+  display: block !important;
 }
