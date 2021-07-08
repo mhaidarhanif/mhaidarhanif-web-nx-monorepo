@@ -22,6 +22,9 @@
     }
   },
   "projects": {
+    "mhaidarhanif-ui": {
+      "tags": []
+    },
     "mhaidarhanif-web": {
       "tags": []
     },

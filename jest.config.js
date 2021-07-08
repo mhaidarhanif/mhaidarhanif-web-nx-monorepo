@@ -1,3 +1,6 @@
 module.exports = {
-  projects: ['<rootDir>/apps/mhaidarhanif-web'],
-};
+  projects: [
+    '<rootDir>/apps/mhaidarhanif-web',
+    '<rootDir>/libs/mhaidarhanif-ui',
+  ],
+}

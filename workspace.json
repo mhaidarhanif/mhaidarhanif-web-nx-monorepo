@@ -1,6 +1,27 @@
 {
   "version": 2,
   "projects": {
+    "mhaidarhanif-ui": {
+      "root": "libs/mhaidarhanif-ui",
+      "sourceRoot": "libs/mhaidarhanif-ui/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/mhaidarhanif-ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/mhaidarhanif-ui"],
+          "options": {
+            "jestConfig": "libs/mhaidarhanif-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "mhaidarhanif-web": {
       "root": "apps/mhaidarhanif-web",
       "sourceRoot": "apps/mhaidarhanif-web",
