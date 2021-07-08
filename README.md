@@ -1,14 +1,37 @@
+# M Haidar Hanif Platform
 
+This platform project was generated using [Nx](https://nx.dev), the smart and extensible build framework for monorepo.
 
-# MhaidarhanifPlatform
+## Vercel
 
-This project was generated using [Nx](https://nx.dev).
+Deployment "Build and Output Settings":
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+```sh
+# Build command
+npm run build:web
+```
 
-🔎 **Smart, Extensible Build Framework**
+```sh
+# Output directory
+dist/apps/mhaidarhanif-web/.next
+```
 
-## Adding capabilities to your workspace
+## Doppler
+
+Manage environment variables easily.
+
+```sh
+doppler login
+doppler setup
+```
+
+```sh
+doppler run -- npm run <command>
+```
+
+## Nx workspace
+
+### Adding capabilities to your workspace
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.
 
@@ -31,7 +54,7 @@ Below are our core plugins:
 
 There are also many [community plugins](https://nx.dev/nx-community) you could add.
 
-## Generate an application
+### Generate an application
 
 Run `nx g @nrwl/react:app my-app` to generate an application.
 
@@ -39,7 +62,7 @@ Run `nx g @nrwl/react:app my-app` to generate an application.
 
 When using Nx, you can create multiple applications and libraries in the same workspace.
 
-## Generate a library
+### Generate a library
 
 Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
@@ -47,48 +70,44 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 Libraries are shareable across libraries and applications. They can be imported from `@mhaidarhanif-platform/mylib`.
 
-## Development server
+### Development server
 
 Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Code scaffolding
 
 Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
 
-## Build
+### Build
 
 Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Running unit tests
 
 Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
 
 Run `nx affected:test` to execute the unit tests affected by a change.
 
-## Running end-to-end tests
+### Running end-to-end tests
 
 Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
 
 Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
-## Understand your workspace
+### Understand your workspace
 
 Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
-## Further help
+### Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
+### Nx Cloud
 
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
+#### Distributed Computation Caching & Distributed Task Execution
 
 Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
 
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
-Visit [Nx Cloud](https://nx.app/) to learn more.
+Visit [Nx Cloud](https://nx.app) to learn more.
