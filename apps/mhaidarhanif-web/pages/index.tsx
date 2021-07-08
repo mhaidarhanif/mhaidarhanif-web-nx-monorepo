@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo'
 import { Flex, Box, Button, Heading, Text, Link } from 'theme-ui'
 
 import { DefaultLayout } from '../layouts'
-import { HomeHero, SocialLinks } from '../components'
+import { HomeHero, HomePosts } from '../components'
 
 const HomePage = () => {
   return (
@@ -11,7 +11,7 @@ const HomePage = () => {
       <NextSeo title="M Haidar Hanif" />
 
       <HomeHero />
-      <SocialLinks />
+      <HomePosts />
     </DefaultLayout>
   )
 }

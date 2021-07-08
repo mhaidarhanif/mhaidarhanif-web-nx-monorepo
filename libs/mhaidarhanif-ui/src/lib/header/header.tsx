@@ -37,9 +37,12 @@ export function Header(props: HeaderProps) {
     <header
       sx={{
         display: 'flex',
+        flexWrap: 'wrap',
         justifyContent: 'space-between',
         alignItems: 'center',
-        p: 3,
+        flexDirection: ['column', 'row'],
+        width: '100%',
+        p: 4,
       }}
     >
       <div>
@@ -64,7 +67,10 @@ export function Header(props: HeaderProps) {
       <Flex
         as="nav"
         sx={{
+          flexWrap: 'wrap',
+          justifyContent: 'center',
           alignItems: 'center',
+          mt: [4, 0],
         }}
       >
         <Button variant="toggle" onClick={cycleColorMode} mr={3}>

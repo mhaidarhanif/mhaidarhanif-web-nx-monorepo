@@ -1,20 +1,29 @@
-import { Box, Flex, Text } from 'theme-ui'
+import { Flex, Text } from 'theme-ui'
+
+import packageData from '../../../../../package.json'
 
 /* eslint-disable-next-line */
 export interface FooterProps {}
 
 export function Footer(props: FooterProps) {
+  const date = new Date()
+  const fullYear = date.getFullYear()
+
   return (
-    <Box
+    <Flex
       as="footer"
-      p="3"
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
+        p: 4,
+        mt: '5em',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}
     >
-      <Text variant="caps">Copyright &copy; M Haidar Hanif</Text>
-    </Box>
+      <Text as="p" variant="caps">
+        M Haidar Hanif &copy; {fullYear}
+      </Text>
+      <Text variant="versionNumber">v{packageData.version}</Text>
+    </Flex>
   )
 }
 

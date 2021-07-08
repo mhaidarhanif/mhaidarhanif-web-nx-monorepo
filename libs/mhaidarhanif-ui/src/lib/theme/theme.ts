@@ -3,6 +3,7 @@ import github from 'typography-theme-github'
 import merge from 'deepmerge'
 
 export const customTheme = {
+  breakpoints: ['50em', '64em'],
   fonts: {
     body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'Epilogue, inherit, sans-serif',
@@ -14,10 +15,6 @@ export const customTheme = {
     },
   },
   text: {
-    caps: {
-      // textTransform: 'uppercase',
-      letterSpacing: '.1em',
-    },
     heading: {
       fontFamily: 'heading',
       fontWeight: 'heading',
@@ -28,11 +25,20 @@ export const customTheme = {
       fontSize: [6, 7, 8],
       fontWeight: 'display',
     },
+    caps: {
+      textTransform: 'uppercase',
+      letterSpacing: '.1em',
+    },
+    versionNumber: {
+      fontSize: 1,
+      opacity: 0.5,
+    },
   },
   colors: {
     brand: '#0aa',
     text: '#111',
     background: '#fff',
+    backgroundAlt: '#efefef',
     primary: '#0aa',
     primaryHover: '#1cc',
     secondary: '#aca',
@@ -44,6 +50,7 @@ export const customTheme = {
         brand: 'hsl(10, 80%, 50%)',
         text: 'hsl(10, 20%, 20%)',
         background: 'hsl(10, 10%, 98%)',
+        backgroundAlt: 'hsl(10, 10%, 95%)',
         primary: 'hsl(10, 80%, 50%)',
         primaryHover: 'hsl(10, 80%, 70%)',
         secondary: 'hsl(10, 60%, 50%)',
@@ -55,6 +62,7 @@ export const customTheme = {
         brand: '#0cc',
         text: '#ddd',
         background: '#111',
+        backgroundAlt: '#222',
         primary: '#0cc',
         primaryHover: '#5ff',
         secondary: '#adb',
@@ -65,6 +73,7 @@ export const customTheme = {
         brand: '#F6E05E',
         text: '#fff',
         background: '#000',
+        backgroundAlt: '#111',
         primary: '#F6E05E',
         primaryHover: '#FAF089',
         secondary: '#F6AD55',
@@ -75,9 +84,9 @@ export const customTheme = {
   },
   cards: {
     primary: {
-      padding: 2,
-      borderRadius: 4,
-      boxShadow: '0 0 3px 1px rgba(0, 0, 0, 0.5)',
+      padding: 4,
+      bg: 'backgroundAlt',
+      borderRadius: 10,
     },
   },
   buttons: {
@@ -117,12 +126,12 @@ export const customTheme = {
       display: 'contents',
     },
     nav: {
-      p: 3,
+      p: [2, 3],
       cursor: 'pointer',
     },
     social: {
       py: 0.5,
-      mx: 3,
+      mr: 4,
       my: 2,
       color: 'primary',
       textDecoration: 'none',
@@ -136,8 +145,8 @@ export const customTheme = {
   textStyles: {
     heading: {
       fontFamily: 'heading',
-      fontWeight: '400',
       lineHeight: 'heading',
+      fontWeight: '400',
     },
     display: {
       variant: 'textStyles.heading',
@@ -188,6 +197,9 @@ export const customTheme = {
       '&:hover': {
         color: 'primaryHover',
       },
+    },
+    p: {
+      margin: '0 0 1em',
     },
     pre: {
       variant: 'prism',

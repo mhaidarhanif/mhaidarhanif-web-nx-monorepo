@@ -10,7 +10,7 @@ export interface LinksProps {
   columns?: number
 }
 
-export function Links({ links }: LinksProps) {
+export function Links({ links = [] }: LinksProps) {
   return (
     <>
       {links.map((link) => {

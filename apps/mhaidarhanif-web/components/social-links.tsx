@@ -2,10 +2,10 @@ import { Flex } from 'theme-ui'
 
 import { Links } from '@mhaidarhanif-platform/mhaidarhanif-ui'
 
-const socialLinks = [
+export const socialLinks = [
   {
     text: 'Message',
-    href: 'https://google.com',
+    href: 'https://airtable.com/shrMKW7nqUdqTnjWK',
   },
   {
     text: 'Twitter',
@@ -49,10 +49,7 @@ export const SocialLinks = () => {
   return (
     <Flex
       sx={{
-        p: 3,
         flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignItems: 'center',
       }}
     >
       <Links links={socialLinks} />
