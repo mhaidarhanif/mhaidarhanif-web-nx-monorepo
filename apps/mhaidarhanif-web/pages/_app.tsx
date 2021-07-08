@@ -12,9 +12,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <DefaultSeo {...SEO} />
 
-      <main>
-        <Component {...pageProps} />
-      </main>
+      <Component {...pageProps} />
     </ThemeProvider>
   )
 }

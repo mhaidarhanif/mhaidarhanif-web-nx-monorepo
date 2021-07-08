@@ -26,6 +26,7 @@ export const theme = {
     },
   },
   colors: {
+    brand: '#0aa',
     text: '#111',
     background: '#fff',
     primary: '#0aa',
@@ -34,6 +35,7 @@ export const theme = {
     secondaryHover: '#adb',
     modes: {
       dark: {
+        brand: '#0cc',
         text: '#ddd',
         background: '#111',
         primary: '#0cc',
@@ -42,14 +44,16 @@ export const theme = {
         secondaryHover: '#cfd',
       },
       midnight: {
+        brand: '#F6E05E',
         text: '#fff',
         background: '#000',
-        primary: '#0cc',
-        primaryHover: '#2ff',
-        secondary: '#adb',
-        secondaryHover: '#cfd',
+        primary: '#F6E05E',
+        primaryHover: '#FAF089',
+        secondary: '#F6AD55',
+        secondaryHover: '#FBD38D',
       },
       laser: {
+        brand: 'hsl(10, 80%, 50%)',
         text: 'hsl(10, 20%, 20%)',
         background: 'hsl(10, 10%, 98%)',
         primary: 'hsl(10, 80%, 50%)',
@@ -57,9 +61,7 @@ export const theme = {
         secondary: 'hsl(10, 60%, 50%)',
         secondaryHover: 'hsl(10, 60%, 60%)',
         highlight: 'hsl(10, 40%, 90%)',
-        purple: 'hsl(250, 60%, 30%)',
         muted: 'hsl(10, 20%, 94%)',
-        gray: 'hsl(10, 20%, 50%)',
       },
     },
   },
@@ -89,12 +91,36 @@ export const theme = {
         bg: 'secondaryHover',
       },
     },
+    toggle: {
+      padding: 2,
+      borderRadius: 'full',
+      fontWeight: 'bold',
+      cursor: 'pointer',
+      color: 'background',
+      bg: 'primary',
+      '&:hover': {
+        bg: 'primaryHover',
+      },
+    },
+  },
+  links: {
+    nav: {
+      p: 3,
+      cursor: 'pointer',
+    },
   },
   styles: {
     root: {
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
+    },
+    brand: {
+      cursor: 'pointer',
+      fontWeight: 'bold',
+      fontSize: '3',
+      letterSpacing: '0.1em',
+      color: 'brand',
     },
   },
 }
