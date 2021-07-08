@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "YTBiMDdjNWItYWEyZS00MDlkLWI5MDAtOWY5ZmY0NTU0Njc3fHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
         "showUsageWarnings": true
@@ -32,9 +27,7 @@
     },
     "mhaidarhanif-web-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "mhaidarhanif-web"
-      ]
+      "implicitDependencies": ["mhaidarhanif-web"]
     }
   }
 }
