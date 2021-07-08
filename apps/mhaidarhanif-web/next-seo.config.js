@@ -14,4 +14,19 @@ export default {
     site: '@mhaidarhanif',
     cardType: 'summary_large_image',
   },
+  additionalLinkTags: [
+    {
+      rel: 'icon',
+      href: '/favicon.ico',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/apple-touch-icon.png',
+      sizes: '180x180',
+    },
+    {
+      rel: 'manifest',
+      href: '/site.webmanifest',
+    },
+  ],
 }
