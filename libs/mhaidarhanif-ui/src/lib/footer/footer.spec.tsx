@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 
-import MhaidarhanifUi from './mhaidarhanif-ui'
+import Footer from './footer'
 
-describe('MhaidarhanifUi', () => {
+describe('Footer', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<MhaidarhanifUi />)
+    const { baseElement } = render(<Footer />)
     expect(baseElement).toBeTruthy()
   })
 })

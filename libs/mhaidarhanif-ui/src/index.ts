@@ -1,1 +1,2 @@
-export * from './lib/mhaidarhanif-ui'
+export * from './lib/header/header'
+export * from './lib/footer/footer'
