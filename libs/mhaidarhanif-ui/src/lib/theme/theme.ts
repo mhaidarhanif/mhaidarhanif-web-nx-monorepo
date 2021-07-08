@@ -1,4 +1,8 @@
-export const theme = {
+import { toTheme } from '@theme-ui/typography'
+import github from 'typography-theme-github'
+import merge from 'deepmerge'
+
+export const customTheme = {
   fonts: {
     body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'Epilogue, inherit, sans-serif',
@@ -124,5 +128,7 @@ export const theme = {
     },
   },
 }
+
+export const theme = merge(toTheme(github), customTheme)
 
 export default theme
