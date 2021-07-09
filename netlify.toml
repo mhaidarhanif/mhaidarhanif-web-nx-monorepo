@@ -1,0 +1,12 @@
+# https://github.com/netlify/netlify-plugin-nextjs/blob/main/docs/monorepos.md
+
+[build]
+  command = "npm run build"
+  publish = "apps/mhaidarhanif-web/out"
+
+[dev]
+  command = "npm run start"
+  targetPort = 4200
+  
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

@@ -122,6 +122,7 @@ export const customTheme = {
     },
   },
   links: {
+    textDecoration: 'none',
     button: {
       display: 'contents',
     },

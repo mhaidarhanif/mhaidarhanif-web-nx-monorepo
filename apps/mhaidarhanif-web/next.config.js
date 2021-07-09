@@ -16,4 +16,6 @@ module.exports =
     : withNx({
         nx: { svgr: true },
         images: { domains: ['mhaidarhanif.com', 'placekitten.com'] },
+        distDir: '.dist',
+        target: 'serverless',
       })
