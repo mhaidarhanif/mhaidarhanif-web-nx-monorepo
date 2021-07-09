@@ -50,10 +50,11 @@ export const BlogPostCard = ({ post }) => {
           margin: '0 auto',
           width: '100%',
           flexDirection: ['column', 'row'],
+          border: '3px solid transparent',
           '&:hover': {
             cursor: 'pointer',
             transition: 'all 0.3s ease-in-out',
-            transform: 'scale(1.02)',
+            borderColor: 'primary',
           },
         }}
       >
