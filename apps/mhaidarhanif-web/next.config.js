@@ -3,6 +3,7 @@ const withPWA = require('next-pwa')
 
 /**
  * Only run next-pwa when not in development
+ * Setup is ready for Vercel
  */
 module.exports =
   process.env.NODE_ENV !== 'development'
@@ -11,8 +12,6 @@ module.exports =
           nx: { svgr: true },
           pwa: { dest: 'public' },
           images: { domains: ['mhaidarhanif.com', 'placekitten.com'] },
-          distDir: '.dist',
-          target: 'serverless',
         })
       )
     : withNx({
