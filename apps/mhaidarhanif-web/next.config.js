@@ -1,19 +1,19 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withNx = require('@nrwl/next/plugins/with-nx')
 const withPWA = require('next-pwa')
 
-module.exports = withNx(
-  withPWA({
-    nx: {
-      // Set this to false if you do not want to use SVGR
-      // See: https://github.com/gregberge/svgr
-      svgr: true,
-    },
-    pwa: {
-      dest: 'public',
-    },
-    images: {
-      domains: ['mhaidarhanif.com', 'placekitten.com'],
-    },
-  })
-)
+/**
+ * Only run next-pwa when not in development
+ */
+module.exports =
+  process.env.NODE_ENV !== 'development'
+    ? withNx(
+        withPWA({
+          nx: { svgr: true },
+          pwa: { dest: 'public' },
+          images: { domains: ['mhaidarhanif.com', 'placekitten.com'] },
+        })
+      )
+    : withNx({
+        nx: { svgr: true },
+        images: { domains: ['mhaidarhanif.com', 'placekitten.com'] },
+      })

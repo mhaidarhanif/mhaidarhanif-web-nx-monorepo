@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo'
-import { Box } from 'theme-ui'
+import { Flex, Heading, Text } from 'theme-ui'
 
 import { DefaultLayout } from '../layouts'
 
@@ -11,9 +11,19 @@ const BlogPage = () => {
         description="Mostly insights on life and technology"
       />
 
-      <Box>
-        <h1>Blog page</h1>
-      </Box>
+      <Flex
+        sx={{
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <Heading as="h1" sx={{ variant: 'styles.h1' }}>
+          Blog
+        </Heading>
+        <Heading as="h2" sx={{ variant: 'styles.h2' }}>
+          Blog posts and writings
+        </Heading>
+      </Flex>
     </DefaultLayout>
   )
 }

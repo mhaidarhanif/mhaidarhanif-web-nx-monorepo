@@ -40,20 +40,10 @@ export const HomeHero = () => {
             maxWidth: ['550px', '100%'],
           }}
         >
-          <Heading
-            as="h1"
-            sx={{
-              variant: 'styles.h1',
-            }}
-          >
+          <Heading as="h1" sx={{ variant: 'styles.h1' }}>
             Hi there! I’m Haidar
           </Heading>
-          <Heading
-            as="h2"
-            sx={{
-              variant: 'styles.h2',
-            }}
-          >
+          <Heading as="h2" sx={{ variant: 'styles.h2' }}>
             Helping people to become become better at what they do is my life
             and work mission.
           </Heading>
