@@ -11,11 +11,11 @@ module.exports =
           nx: { svgr: true },
           pwa: { dest: 'public' },
           images: { domains: ['mhaidarhanif.com', 'placekitten.com'] },
+          distDir: '.dist',
+          target: 'serverless',
         })
       )
     : withNx({
         nx: { svgr: true },
         images: { domains: ['mhaidarhanif.com', 'placekitten.com'] },
-        distDir: '.dist',
-        target: 'serverless',
       })
