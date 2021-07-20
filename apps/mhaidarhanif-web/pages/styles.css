@@ -1,5 +1,14 @@
+html {
+  transition: all 0.5s linear;
+  /* Transition between theme changes */
+}
+
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .next-image-box > div {

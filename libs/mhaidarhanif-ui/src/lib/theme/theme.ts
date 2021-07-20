@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { toTheme } from '@theme-ui/typography'
+// @ts-ignore
 import github from 'typography-theme-github'
 import merge from 'deepmerge'
 
@@ -49,8 +51,20 @@ export const customTheme = {
       laser: {
         brand: 'hsl(10, 80%, 50%)',
         text: 'hsl(10, 20%, 20%)',
-        background: 'hsl(10, 10%, 98%)',
+        background: 'hsl(10, 10%, 90%)',
         backgroundAlt: 'hsl(10, 10%, 95%)',
+        primary: 'hsl(10, 80%, 50%)',
+        primaryHover: 'hsl(10, 80%, 70%)',
+        secondary: 'hsl(10, 60%, 50%)',
+        secondaryHover: 'hsl(10, 60%, 70%)',
+        highlight: 'hsl(10, 40%, 90%)',
+        muted: 'hsl(10, 20%, 94%)',
+      },
+      sunset: {
+        brand: 'hsl(10, 80%, 80%)',
+        text: 'hsl(10, 20%, 90%)',
+        background: 'hsl(0, 10%, 30%)',
+        backgroundAlt: 'hsl(0, 10%, 55%)',
         primary: 'hsl(10, 80%, 50%)',
         primaryHover: 'hsl(10, 80%, 70%)',
         secondary: 'hsl(10, 60%, 50%)',
@@ -76,6 +90,17 @@ export const customTheme = {
         backgroundAlt: '#111',
         primary: '#f6e05e',
         primaryHover: '#faf089',
+        secondary: '#f6ad55',
+        secondaryHover: '#fbd38d',
+        comment: '#222',
+      },
+      dawn: {
+        brand: '#76E4F7',
+        text: '#fff',
+        background: '#065666',
+        backgroundAlt: '#086F83',
+        primary: '#76E4F7',
+        primaryHover: '#00B5D8',
         secondary: '#f6ad55',
         secondaryHover: '#fbd38d',
         comment: '#222',
