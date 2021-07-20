@@ -2,6 +2,7 @@ import { NextSeo } from 'next-seo'
 import { Flex, Heading, Text } from 'theme-ui'
 
 import { DefaultLayout } from '../layouts'
+import { BlogPosts } from '../components'
 
 const BlogPage = () => {
   return (
@@ -23,6 +24,7 @@ const BlogPage = () => {
         <Heading as="h2" sx={{ variant: 'styles.h2' }}>
           Blog posts and writings
         </Heading>
+        <BlogPosts />
       </Flex>
     </DefaultLayout>
   )

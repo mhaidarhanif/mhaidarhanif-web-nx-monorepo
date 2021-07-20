@@ -3,7 +3,7 @@ import { Box } from 'theme-ui'
 
 import { DefaultLayout } from '../layouts'
 
-const AboutPage = () => {
+const OfflinePage = () => {
   return (
     <DefaultLayout>
       <NextSeo title="Offline? - M Haidar Hanif" />
@@ -16,4 +16,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default OfflinePage

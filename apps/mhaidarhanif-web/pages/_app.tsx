@@ -8,6 +8,10 @@ import { theme } from '@mhaidarhanif-platform/mhaidarhanif-ui'
 import './styles.css'
 import SEO from '../next-seo.config'
 
+console.info({
+  message: 'M Haidar Hanif Web',
+})
+
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
