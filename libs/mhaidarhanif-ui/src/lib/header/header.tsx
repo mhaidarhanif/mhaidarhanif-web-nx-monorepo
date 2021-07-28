@@ -6,7 +6,7 @@ import { Flex, Link, NavLink, Button, useColorMode } from 'theme-ui'
 /* eslint-disable-next-line */
 export interface HeaderProps {}
 
-const modes = ['light', 'sunset', 'dark', 'midnight', 'dawn', 'laser']
+const modes = ['light', 'sunset', 'dark', 'midnight', 'dawn', 'sunrise']
 
 const getColorModeName = (mode: string) => {
   switch (mode) {
@@ -23,8 +23,8 @@ const getColorModeName = (mode: string) => {
       return 'Midnight'
     case 'dawn':
       return 'Dawn'
-    case 'laser':
-      return 'Laser'
+    case 'sunrise':
+      return 'Sunrise'
     default:
       return mode
   }

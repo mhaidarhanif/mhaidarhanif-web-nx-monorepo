@@ -11,7 +11,7 @@ export const customTheme = {
     heading: 'Epilogue, inherit, sans-serif',
     monospace: 'Menlo, monospace',
     modes: {
-      laser: {
+      sunrise: {
         heading: 'serif',
       },
     },
@@ -48,7 +48,7 @@ export const customTheme = {
     comment: '#eee',
     keyword: '#c0f',
     modes: {
-      laser: {
+      sunrise: {
         brand: 'hsl(10, 80%, 50%)',
         text: 'hsl(10, 20%, 20%)',
         background: 'hsl(10, 10%, 90%)',
